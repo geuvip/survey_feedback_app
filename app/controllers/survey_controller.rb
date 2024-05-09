@@ -9,6 +9,9 @@ class SurveyController < ApplicationController
         end
       end
       
+        #The purpose of this create_feedback method is to create
+        #feedback for a survey. In a functional Web application, 
+        #this method is typically called in response to an HTTP POST request.
         def create_feedback
           @survey = Survey.find(params[:id])
           @feedback = @survey.feedbacks.create
@@ -21,6 +24,8 @@ class SurveyController < ApplicationController
           render json: @feedback
         end
 
-        
+        def home 
+          render plain: 'No parameter'
+        end
 end
       

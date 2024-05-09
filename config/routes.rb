@@ -11,5 +11,8 @@ Rails.application.routes.draw do
   get '/survey/:id', to: 'survey#show'
   post '/survey/:id', to: 'survey#create_feedback'
 
+  #Router redirection that responds to all requests coming to the home page and outside the home page
+  get '/', to: 'survey#home'
+  match '*path', to: 'survey#home', via: :all
  
 end
