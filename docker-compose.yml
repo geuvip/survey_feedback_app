@@ -9,4 +9,6 @@ services:
   db:
     image: postgres
     environment:
+      POSTGRES_DB: my_database
+      POSTGRES_USER: my_username
       POSTGRES_PASSWORD: mysecretpassword
