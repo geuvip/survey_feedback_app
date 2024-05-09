@@ -17,7 +17,7 @@ default: &default
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: admin
-  password: 
+  password: admin123
   host: db
 
 development:
@@ -32,7 +32,7 @@ production:
   <<: *default
   database: survey_feedback_app_development
   username: admin
-  password: 
+  password: admin123
   host: db
 
 
