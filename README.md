@@ -1,6 +1,7 @@
 # README
-
-* Ruby version 7.1 <br>
+<h4>Using</h4>
+* Rails version 7.1 <br>
+* PostgreSQL <br> <br>
 
 
  GET <code color="green">/survey/:id </code> must show survey details. <br>
@@ -9,7 +10,7 @@
 
  <b>You can use docker to start the project.</b> <br>
 You can use the following command to start the project. <p> <code>docker-compose up -d</code></p>
-<br>
+<br> <b>Note: </b>if you had a error you can use  <code>docker-compose up --build -d</code>
 
 <h4>Example POST Method using</h4><br>
 <p>POST => JSON <br> http://localhost:3000/survey/1</p><br> 
