@@ -4,7 +4,6 @@
 * PostgreSQL <br> <br>
 * Docker <br> <br>
 
-chmod +x start_project.sh  <br>
  
  <b>You can use docker to start the project.</b> <br>
 <b>Step 1</b> You can use the following command to build the project. <p> <code>docker-compose build</code></p> <br>
