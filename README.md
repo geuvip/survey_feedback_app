@@ -4,11 +4,7 @@
 * PostgreSQL <br> <br>
 * Docker <br> <br>
 
-docker-compose build <br>
-docker-compose run web rails db:create <br>
-docker-compose run web rails db:migrate <br>
-docker-compose run web rails db:seed <br>
-docker-compose up  <br>
+chmod +x start_project.sh  <br>
  
  <b>You can use docker to start the project.</b> <br>
 <b>Step 1</b> You can use the following command to build the project. <p> <code>docker-compose build</code></p> <br>
