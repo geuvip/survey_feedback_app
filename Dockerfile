@@ -1,15 +1,23 @@
 # Base image
 FROM ruby:3.1.2
 
-# Set working directory
+# Install PostgreSQL
+RUN apt-get update && apt-get install -y postgresql postgresql-contrib
+
+# Set the working directory
 WORKDIR /app
 
-# Install dependencies
+# Copy the Gemfile and Gemfile.lock
 COPY Gemfile Gemfile.lock ./
+
+# Install gems
 RUN bundle install
 
-# Copy application code
+# Copy the application code
 COPY . .
 
-# Start Rails server
+# Expose port 3000
+EXPOSE 3000
+
+# Start the Rails server
 CMD ["rails", "server", "-b", "0.0.0.0"]
