@@ -18,7 +18,7 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: admin
   password: admin123
-  host: db
+  host: localhost
 
 development:
   <<: *default
@@ -33,7 +33,7 @@ production:
   database: survey_feedback_app_development
   username: admin
   password: admin123
-  host: db
+  host: localhost
 
 
 # As with config/credentials.yml, you never want to store sensitive information,
