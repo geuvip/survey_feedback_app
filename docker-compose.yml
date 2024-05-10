@@ -10,22 +10,21 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - db_data:/var/lib/postgresql/data
+      - /var/lib/postgresql/data
+  
 
   web:
     build: .
-    command: rails server -b 0.0.0.0
+    command: sh -c "bundle exec rails db:create db:migrate && bundle exec rails server -b 0.0.0.0"
     ports:
       - "3000:3000"
     depends_on:
       - db
     volumes:
       - .:/app
-
-volumes:
-  db_data:
+    networks:
+      - app_network
 
 networks:
   app_network:
     driver: bridge
-    name: my_app_network
