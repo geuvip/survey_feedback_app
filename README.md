@@ -4,10 +4,26 @@
 * PostgreSQL <br> <br>
 * Docker <br> <br>
 
+ If you have installed this before You can use the following command to build the project. <p> <code>docker-compose build</code> If you are going to use it from scratch, do not use this!</p>  <br> 
+
+<p></p><br>
+
  
- <b>You can use docker to start the project.</b> <br>
-<b>Step 1</b> You can use the following command to build the project. <p> <code>docker-compose build</code></p> <br>
-<b>Step 2</b> use the following command to start the project. <p> <code>docker-compose up</code></p> <br>
+--------------------------------------------------
+ <b>You can use docker to start the project.</b>
+ <br>
+
+<b>Step 1</b> use the following command to start the project. <p> <code>docker-compose up</code></p> <br>
+
+If pending migration logs if you use manually create database and migration proccess <br>
+<p><b>CTRL-C</b> Stop localhost starting with docker.</p>
+<code>docker-compose run web rails db:create</code><br>
+<code>docker-compose run web rails db:migrate</code><br>
+<code>docker-compose run web rails db:seed</code><br> 
+
+<p>and again use <code>docker-compose up</code></p> <br>
+
+--------------------------------------------------
 
 <h4>How to use ?</h4><br>
 GET <code color="green">/survey/:id </code> must show survey details. <br>
