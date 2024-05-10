@@ -2,7 +2,7 @@
 <h4>Using</h4>
 * Rails version 7.1 <br>
 * PostgreSQL <br> <br>
-
+* Docker <br> <br>
 
  <b>You can use docker to start the project.</b> <br>
 <b>Step 1</b> You can use the following command to build the project. <p> <code>docker-compose build</code></p> <br>
