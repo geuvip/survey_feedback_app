@@ -24,3 +24,8 @@ services:
 
 volumes:
   db_data:
+
+networks:
+  app_network:
+    driver: bridge
+    name: my_app_network

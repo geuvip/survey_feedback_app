@@ -18,7 +18,7 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: admin
   password: admin123
-  host: localhost
+  host: db
   port: 5432
 
 development:
@@ -34,7 +34,7 @@ production:
   database: survey_feedback_app_development
   username: admin
   password: admin123
-  host: localhost
+  host: db
   port: 5432
 
 
